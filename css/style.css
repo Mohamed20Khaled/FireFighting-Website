@@ -1,0 +1,584 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: 'varela round',sans-serif;
+}
+.container{
+
+    width: 90%;
+    margin: auto;/*to start center*/
+}
+.clear{
+    clear: both;
+}
+body{
+
+   font-family: 'varela round',sans-serif;
+}
+.hover-opacity{
+    transition: opacity 0.5s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    transition: width 0.3s;
+    z-index: -1;
+}
+.h-news-item:hover:after{
+    width: 100%;
+}
+
+.pd-y{
+    padding: 80px 0;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-header .section-title{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10ppx;
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin:0 auto 70px auto;
+    background-color:red ;
+}
+
+/* header section */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: gray;
+}
+.logo{
+    color:red ;
+    padding-top: 10px;
+
+}
+.header-content{
+    overflow: hidden;
+}
+.header h1{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+.header .nav{
+    width: 80%; 
+    float: left;
+    list-style:none ;
+    padding: 3px;
+    
+}
+.header .nav li{
+    display: inline-block;
+}
+.header .nav li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding:15px ;
+}
+.header .nav li a:hover{
+    
+    color: rgb(255, 255, 255);
+    transition:0.3s ;
+}
+/* home section */
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* hero image */
+.home-content{   
+    position: absolute;
+    top: 55%;                       
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home .title{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.home-des{
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+}
+/* button in home */
+.home .btn{
+    min-width: 170px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.home .btn-help{
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+}
+.home .btn-learn{
+    background-color: white;
+}
+/* regestration */
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: whitesmoke;
+    box-sizing: border-box;
+    box-shadow: 0 15px 15px rgb(0,0,0,5);
+    border-radius: 10px;
+}
+.box h2{
+    color: red;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    cursor: default;
+    text-transform: uppercase;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: tomato;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid orange;
+    outline: none;
+    background: transparent;
+}
+.box button{
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+    float: left;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box button:hover{
+    background: rgb(202,159,15);
+    color: black;
+}
+/* h-news*/
+.news{
+background-color: #fff;
+
+}
+.news-content{
+    overflow:hidden ;
+    
+}
+.news-item{
+    width:30%;
+    float: left;
+    background: #f8f8f8;
+}
+.news-item.mg{
+    margin: 0 5%;
+}
+.news-item-img img{
+    width: 100%;
+}
+.news-info{
+    padding: 20px;
+    line-height: 1.5;
+}
+.news-list{
+    list-style: none;
+    margin: 10px 0;
+}
+.news-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.news-list li i{
+    color: red;
+}
+
+.news-title{
+    font-weight:bold;
+    margin: 20px 0;
+}
+.news-desc{
+    color: rgb(61, 61, 61);
+}
+.news-link{
+    color: red;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/* h-video */
+.h-video{
+    background-color: #f9f9f9;
+}
+.h-video-item{
+    width: 50%;
+    float: left;
+}
+.h-video-item .section-header{
+    text-align: left;
+}
+.h-video-item .section-header .line{
+    margin: 0 0 60px 0;
+}
+.h-video-item-desc{
+    padding-right: 20px;
+    color: rgb(63, 62, 62);
+    line-height: 1.8;
+    font-size: 17px; 
+    margin-bottom: 20px;
+}
+.h-video-list{
+    list-style: none;
+
+}
+.h-video-list li{
+    margin-bottom: 10px;
+    color: rgb(63, 62, 62);
+}
+.h-video-list li i{
+    border: 1px solid red;
+    color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.h-video-item-video{
+    width: 100%;
+}
+
+/*numbers section*/
+.numbers{
+    background-image: url(../images/background/background3.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
+ 
+}
+.numbers-items{
+    overflow: hidden;
+    padding: 80px 0;
+}
+.number-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.number-item .icon{
+   color: red;
+   margin-bottom: 15px;
+}
+.number-item-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.number-item-text{
+    color: #fff;
+}
+
+
+
+/* product section */
+.h-product{
+   background: #fff;
+}
+.h-product-content{
+    overflow: hidden;
+}
+.h-product-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 55px;
+    position: relative;
+    padding: 20px;
+}
+.h-product-item .product-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+.h-product-item:hover .product-layer{
+    opacity: 1;
+    visibility: visible;
+}
+.product-layer .layer-info{
+    position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   width: 70%;
+
+}
+.product-layer .cat{
+   color: red;
+   font-size: 20px;
+   text-transform: uppercase;
+   display: block;
+   margin-bottom: 5px;
+   font-family: montserrat,sans-serif;
+   font-weight: bold;
+ 
+}
+.product-layer-title{
+    font-size: 15px;
+   color: white;
+   margin-bottom: 10px;
+}
+.product-layer a i{
+    color: red;
+    display: inline block;
+}
+
+.h-product-item.mg{
+    margin: 0 5%;
+}
+.h-product-item img{
+    width: 100%;
+}
+
+
+/*news*/
+.h-news{
+}
+.h-news-content{
+    overflow: hidden;
+
+}
+.h-news-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 50px 20px;
+}
+
+.h-news-item.mg{
+    margin: 0 5%;
+}
+.h-news-item .icon{
+    color: red;
+    margin-bottom: 10px;
+}
+.h-news-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.h-news-item-desc{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.h-news-item-link{
+    color: red;
+    text-transform: capitalize;
+}
+
+/*footer section*/
+.footer{
+    background: #1c1d21;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links li{
+    display: inline-block;
+}
+.footer-links li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: red;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 10%;
+}
+.footer-links li a i{
+    line-height: 50px;
+}
+.footer .copyright{
+    color: #999;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+.footer .copyright .f{
+    color: red;
+}
+/*start about me */
+.about-me{
+   
+    background-color:#F2F2F0;
+    overflow:hidden;
+    height: 100%;
+    margin-top: -600px;
+
+    }
+    
+    .about-me .info{
+    overflow:hidden;
+    float:left;
+    padding-left:0px;
+    width:80%;
+    color:#666;
+    }	
+    .about-me .info h2{
+    margin:40px 500px 40px 450px;
+    border-bottom:5px solid red;
+    }
+    .about-me .info p{
+    line-height: 1.7;
+    color:#666;
+    }
+    .about-me .info > p{
+    margin:0 0px 10px 40px;
+    
+    }
+    .about-me .info p:last-of-type{
+    margin-top: 30px;
+    }
+    .about-me .info .hobbies{
+        overflow:hidden;
+        margin:40px 20px 20px 40px
+    }
+    .about-me .info .hobbies> div {
+        float:left;
+        width:50%;
+        min-height:100px;
+    }
+    /*end out me */
+
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        padding: 40px;
+        background: whitesmoke;
+        box-sizing: border-box;
+        box-shadow: 0 15px 15px rgb(0,0,0,5);
+        border-radius: 10px;
+    }
+    .form  h2{
+        color: red;
+        margin: 0 0 30px;
+        padding: 0;
+        text-align: center;
+        cursor: default;
+        text-transform: uppercase;
+    }
+    .form .inputBox input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        color: tomato;
+        font-size: 20px;
+        color: tomato;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid orange;
+        outline: none;
+        background: transparent;
+    }
+    .form button{
+        border: none;
+        outline: none;
+        color: whitesmoke;
+        background: orange;
+        padding: 10px 20px;
+        border-radius: 10px;
+       float: left;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .form button:hover{
+        background: rgb(202,159,15);
+        color: black;
+    }
+    .form a{
+        text-decoration:none;
+    }
+    .button .btn{
+        min-width: 250px;
+        padding: 15px 0;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        font-size: 20px;
+        
+    }
+    .button .btn a{
+        text-decoration:none;
+
+    }
+    .button .btn-news{
+       /* margin-right: 10px;*/
+       margin: 300px  50px 300px 150px;
+        background-color:red;
+        color: white;
+    }
+   .button .btn-video{
+    margin: 300px  50px;
+    background-color:red;
+    color: white;
+
+   }
+   .button .btn-product{
+    margin: 300px  50px;
+    background-color:red;
+    color: white;
+   }
